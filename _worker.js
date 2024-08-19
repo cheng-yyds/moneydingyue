@@ -1,28 +1,31 @@
 
 // 部署完成后在网址后面加上这个，获取自建节点和机场聚合节点，/?token=auto或/auto或
 
-let mytoken = 'money'; //可以随便取，或者uuid生成，https://1024tools.com/uuid
-let BotToken =''; //可以为空，或者@BotFather中输入/start，/newbot，并关注机器人
-let ChatID =''; //可以为空，或者@userinfobot中获取，/start
-let TG = 0; //小白勿动， 开发者专用，1 为推送所有的访问信息，0 为不推送订阅转换后端的访问信息与异常访问
-let FileName = 'money-cheng';
+let mytoken = 'goodluck'; //可以随便取，或者uuid生成，https://1024tools.com/uuid
+let BotToken ='7465555346:AAHIvfIjj1lWCw9E9T-1mqJcyMtC7x7gRPE'; //可以为空，或者@BotFather中输入/start，/newbot，并关注机器人
+let ChatID ='994890022'; //可以为空，或者@userinfobot中获取，/start
+let TG = 1; //小白勿动， 开发者专用，1 为推送所有的访问信息，0 为不推送订阅转换后端的访问信息与异常访问
+let FileName = 'goodluck-Workers';
 let SUBUpdateTime = 6; //自定义订阅更新时间，单位小时
-let total = 999;//TB
-let timestamp =2099-12-31
+let total = 520;//TB
+let timestamp = 4102329600000;//2099-12-31
 
 let cacheTTL = 24 ;//小时，缓存时长
 
-//节点链接 + 订阅链接，ninecloud，追云加速器，水牛云，爱莲加速器
+//节点链接 + 订阅链接
+
 let MainData = `
-https://ninecloud.pages.dev/api/v1/client/subscribe?token=ae681bed4c220c8a27a75be287a54553&flag=meta
-https://sux.lol/api/v1/client/subscribe?token=6ef5cdf060239cc903debc917f513299
-https://ap.niubi.site/api/v1/client/subscribe?token=b1e18ebde1dd43255cee318bcb5eaa0f
-https://qqq.ma24dfu3wfm.top/api/v1/client/subscribe?token=768fc7e2ad1531abd903eb32cea9f41d
-
+https://alvless.comorg.us.kg/sub?host=github.cfsvip.dynv6.net&uuid=28342213-8cf1-44b6-bc49-1ffd928bb0a9
+https://raw.githubusercontent.com/Huibq/TrojanLinks/master/links/trojan
+https://moistr.freenods.sbs/sub?host=github.cfsvip.dynv6.net&uuid=28342213-8cf1-44b6-bc49-1ffd928bb0a9
+https://best.cfsvip.dynv6.net/dd0559d4-92a8-4fd8-8fbc-f9694f3ca9ba/pty
+https://VLESS.fxxk.dedyn.io/sub?host=github.cfsvip.dynv6.net&uuid=28342213-8cf1-44b6-bc49-1ffd928bb0a9
+https://sub.skvless.us.kg/sub?host=ts.6516789.xyz&uuid=99280094-e683-476b-a3cd-0d37c3892c6f
+https://bpb.cfsvip.dynv6.net/sub/56cb61a6-bd8e-48a8-a7b8-77a43fb563da#BPB-Normal
+https://king361.fxxk.dedyn.io/sub?host=github.cfsvip.dynv6.net&uuid=28342213-8cf1-44b6-bc49-1ffd928bb0a9
 `
-
 let urls = [];
-let subconverter = "subapi-loadbalancing.pages.dev"; //在线订阅转换后端，目前使用CM的转换功能。支持自建psub 可自行搭建https://github.com/bulianglin/psub
+let subconverter = "SUBAPI.fxxk.dedyn.io"; //在线订阅转换后端，目前使用CM的订阅转换功能。支持自建psub 可自行搭建https://github.com/bulianglin/psub
 let subconfig = "https://raw.githubusercontent.com/cmliu/ACL4SSR/main/Clash/config/ACL4SSR_Online_MultiCountry.ini"; //订阅配置文件
 let subProtocol = 'https';
 
