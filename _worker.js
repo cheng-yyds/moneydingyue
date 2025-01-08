@@ -14,10 +14,7 @@ let cacheTTL = 24 ;//小时，缓存时长
 //节点链接 + 订阅链接
 
 let MainData = `
-https://krecs.ftq.ink:4002/#%E4%B8%81%E7%9C%9F%EF%BC%815
-https://krecs.ftq.ink:4001/#%E4%B8%81%E7%9C%9F%EF%BC%814
-https://hk9.ftq.ink:4001/#%E4%B8%81%E7%9C%9F%EF%BC%813https://hk.ftq.ink:4000/#%E4%B8%81%E7%9C%9F%EF%BC%811
-https://hk.ftq.ink:4002/#%E4%B8%81%E7%9C%9F%EF%BC%812
+
 trojan://2baa2d43-b564-3b1f-92c7-c6fa1ff7e0a2@scm.zarelayv1.com:39874/?type=tcp&security=tls&sni=us-katt.zodport.com#%E4%B8%81%E7%9C%9F%EF%BC%81%E5%A4%A7%E6%BC%82%E4%BA%AE
 `
 let urls = [];
